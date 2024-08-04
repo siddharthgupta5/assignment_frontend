@@ -1,30 +1,4 @@
-/* .employee-table-container {
-    margin: 20px;
-    font-family: Arial, sans-serif;
-  }
-  
-  h1 {
-    text-align: center;
-  }
-  
-  .employee-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-  }
-  
-  .employee-table th, .employee-table td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
-  }
-  
-  .employee-table th {
-    background-color: #f2f2f2;
-  }
-   */
-
-   .employee-table-container {
+.employee-table-container {
     margin: 20px;
     font-family: Arial, sans-serif;
   }
@@ -49,19 +23,102 @@
     background-color: #f2f2f2;
   }
   
-  .add-employee-form {
-    margin: 20px 0;
-    text-align: center;
+  .employee-table tr:nth-child(even) {
+    background-color: #f9f9f9;
   }
   
-  .add-employee-form input {
-    padding: 8px;
-    margin-right: 8px;
+  .employee-table tr:hover {
+    background-color: #f1f1f1;
   }
   
-  .add-employee-form button {
-    padding: 8px 16px;
+  .employee-table .actions button {
+    margin-right: 5px;
+    padding: 5px 10px;
     cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+  }
+  
+  .employee-table .actions .edit-button {
+    background-color: #4CAF50; /* Green */
+  }
+  
+  .employee-table .actions .delete-button {
+    background-color: #f44336; /* Red */
+  }
+  
+  .employee-table .actions .edit-button:hover {
+    background-color: #45a049;
+  }
+  
+  .employee-table .actions .delete-button:hover {
+    background-color: #e53935;
+  }
+  
+  .open-popup-button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff; /* Blue */
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .open-popup-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .employee-form-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    z-index: 1000;
+  }
+  
+  .employee-form-popup h2 {
+    margin-top: 0;
+  }
+  
+  .employee-form-popup input {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: calc(100% - 22px);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .employee-form-popup button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .employee-form-popup .submit-button {
+    background-color: #007bff; /* Blue */
+  }
+  
+  .employee-form-popup .cancel-button {
+    background-color: #6c757d; /* Gray */
+    margin-left: 10px;
+  }
+  
+  .employee-form-popup .submit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .employee-form-popup .cancel-button:hover {
+    background-color: #5a6268;
   }
   
   .form-error {
@@ -72,5 +129,24 @@
   .pagination-controls {
     text-align: center;
     margin-top: 20px;
+  }
+  
+  .pagination-controls button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff; /* Blue */
+    color: #fff;
+    font-size: 16px;
+    margin: 0 5px;
+  }
+  
+  .pagination-controls button:hover {
+    background-color: #0056b3;
+  }
+  
+  .pagination-controls span {
+    margin: 0 10px;
   }
   
